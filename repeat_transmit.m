@@ -4,13 +4,14 @@
         num_errors = 0;
         for j = i: 3
             if (rand() <= p)
-                num_errors += 1;
+                num_errors = num_errors + 1;
             end
         end
         
         if (num_errors >= 2)
-            output(i) = !(input(i));
+            output(i) = 1 - input(i);
         else
             output(i) = input(i);
+        end
     end
 end
