@@ -44,7 +44,7 @@ parity_output3 = transmit(parity_input, 0.7);
 
 chan_output1_3 = parity_correct(parity_output1);
 chan_output2_3 = parity_correct(parity_output2);
-chan_output3_3 = parity_correct(parity_output3);
+chan_output3_3 = tran(parity_output3);
 
 %chan_output1_3 = parity_3(chan_output1_1);
 %chan_output2_3 = parity_3(chan_output1_2);
@@ -54,9 +54,9 @@ chan_error_rate1_3 = error_rate(input, chan_output1_3);
 chan_error_rate2_3 = error_rate(input, chan_output2_3);
 chan_error_rate3_3 = error_rate(input, chan_output3_3);
 
-msg3_1 = sprintf("Error rate for Parity bits and a p = 0.3: %d", chan_error_rate1_3);
-msg3_2 = sprintf("Error rate for Parity bits and a p = 0.5: %d", chan_error_rate2_3);
-msg3_3 = sprintf("Error rate for Parity bits and a p = 0.7: %d", chan_error_rate3_3);
+msg3_1 = sprintf("Error rate for Parity bits and a p = 0.3: channel %d", chan_error_rate1_3);
+msg3_2 = sprintf("Error rate for Parity bits and a p = 0.5: channel %d", chan_error_rate2_3);
+msg3_3 = sprintf("Error rate for Parity bits and a p = 0.7: channel %d", chan_error_rate3_3);
 disp(msg3_1);
 disp(msg3_2);
 disp(msg3_3);

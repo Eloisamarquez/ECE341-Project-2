@@ -2,7 +2,7 @@
     output = zeros() * length(input);
     for i = 1: length(input)
         num_errors = 0;
-        for j = i: 3
+        for j = 1: 3
             if (rand() <= p)
                 num_errors = num_errors + 1;
             end

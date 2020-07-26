@@ -1,0 +1,13 @@
+function parity_input = add_parity(input)
+parity_input = zeros() * (900 * 2);
+for i = 1: 3: lenght(input)
+    for j = 0: 2
+        parity_input(i + j) = input(i + j);
+    end
+    parity_input(i + 3) =;
+    parity_input(i + 4);
+    parity_input(i + 5);
+end
+parity_input = input;
+end
+
